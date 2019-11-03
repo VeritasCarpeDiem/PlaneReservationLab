@@ -71,7 +71,7 @@ void makeReservation(char seatchar, int seatnum, string name, string seats[8][11
 		cout << "Choose your seat number, " << name << ": ";
 		cin >> seatchar >> seatnum;
 
-	} while (isUserSeatInputValid(seatchar, seatnum) != true);
+	} while (!isUserSeatInputValid(seatchar, seatnum) );
 
 	for (int row = 0; row < 8; row++) //assign user's name into name array and seat coordinate into seat array
 	{
